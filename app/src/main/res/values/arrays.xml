@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="select_sim_entries">
+        <item>@string/label_jazz</item>
+        <item>@string/label_warid</item>
+        <item>@string/label_telenor</item>
+        <item>@string/label_zong</item>
+        <item>@string/label_ufone</item>
+
+    </array>
+
+
+    <array name="select_sim_values">
+        <item>@string/value_jazz</item>
+        <item>@string/value_warid</item>
+        <item>@string/value_telenor</item>
+        <item>@string/value_zong</item>
+        <item>@string/value_ufone</item>
+    </array>
+</resources>

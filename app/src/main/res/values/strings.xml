@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Balance Hack</string>
+    <string name="select_your_sim">Select Your Sim</string>
+    <string name="you_can_change_it_any_time">Don\'t worry, you can change it any time</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+    <string name="label_jazz">Jazz</string>
+    <string name="label_warid">Warid</string>
+    <string name="label_telenor">Telenor</string>0
+    <string name="label_zong">Zong</string>
+    <string name="label_ufone">Ufone</string>
+    <string name="value_jazz">jazz</string>
+    <string name="value_warid">warid</string>
+    <string name="value_telenor">telenor</string>
+    <string name="value_zong">zong</string>
+    <string name="value_ufone">ufone</string>
+    <string name="default_sim">default_sim</string>
+    <string name="settings">Settings</string>
+
+
+    <!--Others-->
+    <string name="rate_this_app">Rate this app</string>
+    <string name="try_it">Try it</string>
+    <string name="generate_number">Generate Number</string>
+    <string name="initial_random_number">23456785434678</string>
+    <string name="banner_ad_unit_id">ca-app-pub-6298670741113425/3117733457</string>
+    <string name="interstitial_ad_unit_id">ca-app-pub-6298670741113425/2967466312</string>
+    <string name="admob_app_id">ca-app-pub-6298670741113425~3884020214</string>
+
+
+</resources>

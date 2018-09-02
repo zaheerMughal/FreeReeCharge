@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectSim"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:textSize="30sp"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/key_line_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/select_your_sim"/>
+    <TextView
+        android:gravity="center"
+        android:textColor="@color/subheading_text_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/you_can_change_it_any_time"
+        android:layout_marginBottom="@dimen/key_line_1"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/jazz"
+                android:onClick="onSimLogoClick"
+                style="@style/logo_button_style"
+                android:layout_width="@dimen/sim_logo_width_height"
+                android:layout_height="@dimen/sim_logo_width_height"
+                android:background="@drawable/jazz_logo" 
+                android:stateListAnimator="@animator/button_raise_animation_on_click"/>
+
+            <ImageButton
+                android:id="@+id/warid"
+                android:onClick="onSimLogoClick"
+                style="@style/logo_button_style"
+                android:layout_width="@dimen/sim_logo_width_height"
+                android:layout_height="@dimen/sim_logo_width_height"
+                android:background="@drawable/warid_logo"
+                android:stateListAnimator="@animator/button_raise_animation_on_click"/>
+
+            <ImageButton
+                android:id="@+id/telenor"
+                android:onClick="onSimLogoClick"
+                style="@style/logo_button_style"
+                android:layout_width="@dimen/sim_logo_width_height"
+                android:layout_height="@dimen/sim_logo_width_height"
+                android:background="@drawable/telenor_logo"
+                android:stateListAnimator="@animator/button_raise_animation_on_click"/>
+
+            <ImageButton
+                android:onClick="onSimLogoClick"
+                android:id="@+id/zong"
+                style="@style/logo_button_style"
+                android:layout_width="@dimen/sim_logo_width_height"
+                android:layout_height="@dimen/sim_logo_width_height"
+                android:background="@drawable/zong_logo"
+                android:stateListAnimator="@animator/button_raise_animation_on_click"/>
+
+            <ImageButton
+                android:id="@+id/ufone"
+                android:onClick="onSimLogoClick"
+                style="@style/logo_button_style"
+                android:layout_width="@dimen/sim_logo_width_height"
+                android:layout_height="@dimen/sim_logo_width_height"
+                android:background="@drawable/ufone_logo"
+                android:stateListAnimator="@animator/button_raise_animation_on_click"/>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>

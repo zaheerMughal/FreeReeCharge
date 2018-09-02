@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/white" />
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/mainContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:padding="@dimen/key_line_1">
+
+        <TextView
+            android:id="@+id/generatedNumberTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/key_line_1"
+            android:gravity="center"
+            android:text="@string/initial_random_number"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/generated_number_text_size"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/completeCodeTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            tools:text="Complete Code: *123*23454654903984#"
+            android:textColor="@color/subheading_text_color"
+            android:textSize="@dimen/sub_heading_text_size"
+            app:layout_constraintTop_toBottomOf="@id/generatedNumberTV" />
+
+
+        <Button
+            android:id="@+id/generateNumberBtn"
+            style="@style/button_style"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/button_background"
+            android:text="@string/generate_number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/completeCodeTV" />
+
+        <Button
+            android:id="@+id/tryItBtn"
+            style="@style/button_style"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_background"
+            android:text="@string/try_it"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/generateNumberBtn" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/bannerAdView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id"/>
+
+
+</RelativeLayout>
